@@ -1,0 +1,21 @@
+{
+  "name": "food-ordering-app",
+  "version": "1.0.0",
+  "description": "This is Food Ordering App",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/merakesh048/food-ordering-app)"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Rakesh Yadav",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  }
+}
