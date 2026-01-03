@@ -2,7 +2,7 @@
   "name": "food-ordering-app",
   "version": "1.0.0",
   "description": "This is Food Ordering App",
-  "main": "app.js",
+ 
   "scripts": {
     "test": "jest"
   },
@@ -17,5 +17,9 @@
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.16.3"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   }
 }
