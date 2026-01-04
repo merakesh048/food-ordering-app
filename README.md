@@ -12,6 +12,8 @@ This is a food ordering app
 - Search
 - RestaurantContainer
   - RestaurantCard
+    - Img
+    - Name of Res, Star Rating, Cuisine, deliver time
 
 # Footer
 

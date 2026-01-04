@@ -3,6 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding-right: 50px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .logo {
@@ -16,7 +19,33 @@
 }
 
 .nav-items>ul>li {
+  font-size: 18px;
   list-style-type: none;
   cursor: pointer;
   margin-top: -20px;
+}
+
+.restaurant-Container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.restaurant-card {
+  height: 300px;
+  width: 200px;
+  border: 1px solid gray;
+  padding: 2px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-logo {
+  height: 150px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  /* object-fit: cover; */
 }
