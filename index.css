@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.logo {
+  height: 120px;
+  cursor: pointer;
+}
+
+.nav-items>ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-items>ul>li {
+  list-style-type: none;
+  cursor: pointer;
+  margin-top: -20px;
+}
