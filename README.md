@@ -11,7 +11,7 @@ This is a food ordering app
 
 - Search
 - RestaurantContainer
-  - RestarantCard
+  - RestaurantCard
 
 # Footer
 
