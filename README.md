@@ -13,7 +13,7 @@ This is a food ordering app
 - RestaurantContainer
   - RestaurantCard
     - Img
-    - Name of Res, Star Rating, Cuisine, deliver time
+    - Name of Restaurant, Star Rating, Cuisine, Delivery time
 
 # Footer
 
