@@ -723,17 +723,21 @@ const resList = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
 ];
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
+  const { resData } = props;
+  const {cloudinaryImageId,name,avgRating,sla,costForTwo,cuisines} = resData ?.info ;
   return (
     <div className="restaurant-card">
       <img
         className="restaurant-logo"
-        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/b1h0agx8ysx7w6ybrygc"
+        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`}
         alt="restaurant-logo"
       />
-      <h4>Meghna Foods</h4>
-      <h5>4.2⭐ | 38 mins | ₹400 for two</h5>
-      <p>Biryani, North Indian, Mughlai</p>
+      <h4>{name}</h4>
+      <h5>
+        {avgRating}⭐ | {sla.slaString} | {costForTwo}
+      </h5>
+      <p>{cuisines.join(", ")}</p>
     </div>
   );
 };
@@ -743,13 +747,17 @@ const Body = () => {
     <div className="body">
       <div className="Search">Search</div>
       <div className="restaurant-Container">
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
+        {/* <RestaurantCard resData={resList[0]} />
+        <RestaurantCard resData={resList[1]} />
+        <RestaurantCard resData={resList[2]} />
+        <RestaurantCard resData={resList[3]} />
+        <RestaurantCard resData={resList[4]} />
+        <RestaurantCard resData={resList[5]} />
+        <RestaurantCard resData={resList[6]} />
+        <RestaurantCard resData={resList[7]} /> */
+        resList.map((restaurant) => (
+          <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+        ))}
       </div>
     </div>
   );
