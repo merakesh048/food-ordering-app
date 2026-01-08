@@ -2,7 +2,7 @@ import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/mockData";
 import { useState } from "react";
 const Body = () => {
-  const [listOfRestaurant, setlistOfRestaurant] = useState(resList);
+  const [listOfRestaurant, setListOfRestaurant] = useState(resList);
   return (
     <div className="body">
       <div className="filter">
@@ -12,7 +12,7 @@ const Body = () => {
             const filteredList = listOfRestaurant.filter(
               (restaurant) => restaurant.info.avgRating > 4.2
             );
-            setlistOfRestaurant(filteredList);
+            setListOfRestaurant(filteredList);
           }}
         >
           Top Rated Restaurants
