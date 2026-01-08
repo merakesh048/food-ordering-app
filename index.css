@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 50px;
-  border: 1px solid gray;
+  padding-right: 80px;
+  /* border: 1px solid gray; */
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
@@ -15,14 +15,26 @@
 
 .nav-items>ul {
   display: flex;
-  gap: 20px;
+  gap: 50px;
 }
 
 .nav-items>ul>li {
   font-size: 18px;
+  color: #ff6347;
   list-style-type: none;
   cursor: pointer;
   margin-top: -20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px 110px 0 110px;
 }
 
 .restaurant-Container {
