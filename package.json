@@ -2,7 +2,6 @@
   "name": "food-ordering-app",
   "version": "1.0.0",
   "description": "This is Food Ordering App",
- 
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -22,6 +21,7 @@
   },
   "dependencies": {
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.12.0"
   }
 }
