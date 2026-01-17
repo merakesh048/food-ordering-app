@@ -8,6 +8,9 @@ const Body = () => {
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
 
+  // if no dependency array, useEffect will be called on every re-render
+  // if dependency array is empty, useEffect will be called only once (on initial render)
+  // if there is a variable in the dependency array, useEffect will be called whenever that variable changes
   useEffect(() => {
     //API Call
     fetchData();
