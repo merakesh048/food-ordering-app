@@ -20,10 +20,13 @@
 
 .nav-items>ul>li {
   font-size: 18px;
-  color: #ff6347;
   list-style-type: none;
   cursor: pointer;
-  /* margin-top: -20px; */
+}
+
+.nav-items>ul>li>a {
+  text-decoration: none;
+  color: #ff6347;
 }
 
 .login-btn {
@@ -76,6 +79,11 @@
   border-radius: 8px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+.resCard-link {
+  text-decoration: none !important;
+  color: inherit;
 }
 
 .restaurant-card:hover {
