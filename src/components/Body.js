@@ -127,7 +127,7 @@ const Body = () => {
         </button>
       </div>
 
-      <div className="restaurant-Container">
+      <div className="restaurant-Container gap-8">
         {
           /* <RestaurantCard resData={resList[0]} />
         <RestaurantCard resData={resList[1]} />*/

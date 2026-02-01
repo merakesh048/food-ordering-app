@@ -11,11 +11,11 @@ const RestaurantCard = (props) => {
         src={`${CDN_URL}${cloudinaryImageId}`}
         alt="restaurant-logo"
       />
-      <h4>{name}</h4>
-      <h5>
+      <h4 className="font-semibold mx-2 my-4 font-Gilory">{name}</h4>
+      <h5 className="m-2 font-normal">
         {avgRating}⭐ | {sla.slaString} | {costForTwo}
       </h5>
-      <p>{cuisines.join(", ")}</p>
+      <p className="m-1 text-gray-700 text-sm">{cuisines.join(", ")}</p>
     </div>
   );
 };

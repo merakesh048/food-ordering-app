@@ -1,28 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-right: 80px;
-  /* border: 1px solid gray; */
+  border: 1px solid gray; 
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
+ */
 
-.logo {
+/* .logo {
   height: 120px;
   cursor: pointer;
-}
+} */
 
-.nav-items>ul {
+/* .nav-items>ul {
   display: flex;
   gap: 50px;
-}
+} */
 
-.nav-items>ul>li {
+/* .nav-items>ul>li {
   font-size: 18px;
   list-style-type: none;
   cursor: pointer;
-}
+} */
 
 .nav-items>ul>li>a {
   text-decoration: none;
@@ -67,7 +73,6 @@
 
 .restaurant-Container {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
   padding: 0 110px;
